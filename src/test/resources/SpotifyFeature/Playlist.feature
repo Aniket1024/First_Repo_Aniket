@@ -16,3 +16,4 @@ When user calls with PUT http request
 Then api call executes with status code 200
 
 Scenario: verify if update playlist functionality is working or not
+Given create playlist api payload 
