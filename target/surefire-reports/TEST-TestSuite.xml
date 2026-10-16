@@ -1,0 +1,829 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="TestSuite" time="12.665" tests="4" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\Admin\eclipse-workspace\ATT06JunBDDRESTAssuredFramework\target\test-classes;C:\Users\Admin\eclipse-workspace\ATT06JunBDDRESTAssuredFramework\target\classes;C:\Users\Admin\.m2\repository\io\rest-assured\rest-assured\6.0.0\rest-assured-6.0.0.jar;C:\Users\Admin\.m2\repository\org\apache\groovy\groovy\5.0.3\groovy-5.0.3.jar;C:\Users\Admin\.m2\repository\org\apache\groovy\groovy-xml\5.0.3\groovy-xml-5.0.3.jar;C:\Users\Admin\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Admin\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Admin\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Admin\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\Admin\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\Admin\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\Admin\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Admin\.m2\repository\io\rest-assured\json-path\6.0.0\json-path-6.0.0.jar;C:\Users\Admin\.m2\repository\org\apache\groovy\groovy-json\5.0.3\groovy-json-5.0.3.jar;C:\Users\Admin\.m2\repository\io\rest-assured\rest-assured-common\6.0.0\rest-assured-common-6.0.0.jar;C:\Users\Admin\.m2\repository\io\rest-assured\xml-path\6.0.0\xml-path-6.0.0.jar;C:\Users\Admin\.m2\repository\org\apache\commons\commons-lang3\3.19.0\commons-lang3-3.19.0.jar;C:\Users\Admin\.m2\repository\org\testng\testng\7.12.0\testng-7.12.0.jar;C:\Users\Admin\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\Admin\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\Admin\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\Admin\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.22.1\jackson-databind-2.22.1.jar;C:\Users\Admin\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.22\jackson-annotations-2.22.jar;C:\Users\Admin\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.22.1\jackson-core-2.22.1.jar;C:\Users\Admin\.m2\repository\io\cucumber\cucumber-java\7.34.3\cucumber-java-7.34.3.jar;C:\Users\Admin\.m2\repository\io\cucumber\cucumber-core\7.34.3\cucumber-core-7.34.3.jar;C:\Users\Admin\.m2\repository\io\cucumber\cucumber-gherkin\7.34.3\cucumber-gherkin-7.34.3.jar;C:\Users\Admin\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.34.3\cucumber-gherkin-messages-7.34.3.jar;C:\Users\Admin\.m2\repository\io\cucumber\gherkin\36.1.0\gherkin-36.1.0.jar;C:\Users\Admin\.m2\repository\io\cucumber\messages\30.1.0\messages-30.1.0.jar;C:\Users\Admin\.m2\repository\io\cucumber\messages-ndjson\0.3.2\messages-ndjson-0.3.2.jar;C:\Users\Admin\.m2\repository\io\cucumber\pretty-formatter\2.4.1\pretty-formatter-2.4.1.jar;C:\Users\Admin\.m2\repository\io\cucumber\query\14.7.0\query-14.7.0.jar;C:\Users\Admin\.m2\repository\io\cucumber\teamcity-formatter\0.2.0\teamcity-formatter-0.2.0.jar;C:\Users\Admin\.m2\repository\io\cucumber\testng-xml-formatter\0.7.0\testng-xml-formatter-0.7.0.jar;C:\Users\Admin\.m2\repository\io\cucumber\usage-formatter\0.1.0\usage-formatter-0.1.0.jar;C:\Users\Admin\.m2\repository\io\cucumber\tag-expressions\8.1.0\tag-expressions-8.1.0.jar;C:\Users\Admin\.m2\repository\io\cucumber\cucumber-expressions\18.1.0\cucumber-expressions-18.1.0.jar;C:\Users\Admin\.m2\repository\io\cucumber\cucumber-json-formatter\0.3.2\cucumber-json-formatter-0.3.2.jar;C:\Users\Admin\.m2\repository\io\cucumber\datatable\7.34.3\datatable-7.34.3.jar;C:\Users\Admin\.m2\repository\io\cucumber\cucumber-plugin\7.34.3\cucumber-plugin-7.34.3.jar;C:\Users\Admin\.m2\repository\io\cucumber\docstring\7.34.3\docstring-7.34.3.jar;C:\Users\Admin\.m2\repository\io\cucumber\html-formatter\22.3.0\html-formatter-22.3.0.jar;C:\Users\Admin\.m2\repository\io\cucumber\junit-xml-formatter\0.11.0\junit-xml-formatter-0.11.0.jar;C:\Users\Admin\.m2\repository\io\cucumber\ci-environment\12.0.0\ci-environment-12.0.0.jar;C:\Users\Admin\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Admin\.m2\repository\io\cucumber\cucumber-testng\7.34.3\cucumber-testng-7.34.3.jar;C:\Users\Admin\.m2\repository\io\qameta\allure\allure-cucumber7-jvm\2.35.3\allure-cucumber7-jvm-2.35.3.jar;C:\Users\Admin\.m2\repository\io\qameta\allure\allure-java-commons\2.35.3\allure-java-commons-2.35.3.jar;C:\Users\Admin\.m2\repository\io\qameta\allure\allure-model\2.35.3\allure-model-2.35.3.jar;C:\Users\Admin\.m2\repository\io\qameta\allure\allure-rest-assured\2.35.3\allure-rest-assured-2.35.3.jar;C:\Users\Admin\.m2\repository\io\qameta\allure\allure-attachments\2.35.3\allure-attachments-2.35.3.jar;C:\Users\Admin\.m2\repository\org\freemarker\freemarker\2.3.33\freemarker-2.3.33.jar;C:\Users\Admin\.m2\repository\io\qameta\allure\allure-testng\2.35.3\allure-testng-2.35.3.jar;C:\Users\Admin\.m2\repository\io\qameta\allure\allure-test-filter\2.35.3\allure-test-filter-2.35.3.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="C:\Users\Admin\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.11.v20260515-1531\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\Admin\AppData\Local\Temp\surefire17713266130768575895\surefirebooter-20260802121211350_3.jar C:\Users\Admin\AppData\Local\Temp\surefire17713266130768575895 2026-08-02T12-12-10_807-jvmRun1 surefire-20260802121211350_1tmp surefire_0-20260802121211350_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\Admin\eclipse-workspace\ATT06JunBDDRESTAssuredFramework\target\test-classes;C:\Users\Admin\eclipse-workspace\ATT06JunBDDRESTAssuredFramework\target\classes;C:\Users\Admin\.m2\repository\io\rest-assured\rest-assured\6.0.0\rest-assured-6.0.0.jar;C:\Users\Admin\.m2\repository\org\apache\groovy\groovy\5.0.3\groovy-5.0.3.jar;C:\Users\Admin\.m2\repository\org\apache\groovy\groovy-xml\5.0.3\groovy-xml-5.0.3.jar;C:\Users\Admin\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Admin\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Admin\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Admin\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\Admin\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\Admin\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\Admin\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Admin\.m2\repository\io\rest-assured\json-path\6.0.0\json-path-6.0.0.jar;C:\Users\Admin\.m2\repository\org\apache\groovy\groovy-json\5.0.3\groovy-json-5.0.3.jar;C:\Users\Admin\.m2\repository\io\rest-assured\rest-assured-common\6.0.0\rest-assured-common-6.0.0.jar;C:\Users\Admin\.m2\repository\io\rest-assured\xml-path\6.0.0\xml-path-6.0.0.jar;C:\Users\Admin\.m2\repository\org\apache\commons\commons-lang3\3.19.0\commons-lang3-3.19.0.jar;C:\Users\Admin\.m2\repository\org\testng\testng\7.12.0\testng-7.12.0.jar;C:\Users\Admin\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\Admin\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\Admin\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\Admin\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.22.1\jackson-databind-2.22.1.jar;C:\Users\Admin\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.22\jackson-annotations-2.22.jar;C:\Users\Admin\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.22.1\jackson-core-2.22.1.jar;C:\Users\Admin\.m2\repository\io\cucumber\cucumber-java\7.34.3\cucumber-java-7.34.3.jar;C:\Users\Admin\.m2\repository\io\cucumber\cucumber-core\7.34.3\cucumber-core-7.34.3.jar;C:\Users\Admin\.m2\repository\io\cucumber\cucumber-gherkin\7.34.3\cucumber-gherkin-7.34.3.jar;C:\Users\Admin\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.34.3\cucumber-gherkin-messages-7.34.3.jar;C:\Users\Admin\.m2\repository\io\cucumber\gherkin\36.1.0\gherkin-36.1.0.jar;C:\Users\Admin\.m2\repository\io\cucumber\messages\30.1.0\messages-30.1.0.jar;C:\Users\Admin\.m2\repository\io\cucumber\messages-ndjson\0.3.2\messages-ndjson-0.3.2.jar;C:\Users\Admin\.m2\repository\io\cucumber\pretty-formatter\2.4.1\pretty-formatter-2.4.1.jar;C:\Users\Admin\.m2\repository\io\cucumber\query\14.7.0\query-14.7.0.jar;C:\Users\Admin\.m2\repository\io\cucumber\teamcity-formatter\0.2.0\teamcity-formatter-0.2.0.jar;C:\Users\Admin\.m2\repository\io\cucumber\testng-xml-formatter\0.7.0\testng-xml-formatter-0.7.0.jar;C:\Users\Admin\.m2\repository\io\cucumber\usage-formatter\0.1.0\usage-formatter-0.1.0.jar;C:\Users\Admin\.m2\repository\io\cucumber\tag-expressions\8.1.0\tag-expressions-8.1.0.jar;C:\Users\Admin\.m2\repository\io\cucumber\cucumber-expressions\18.1.0\cucumber-expressions-18.1.0.jar;C:\Users\Admin\.m2\repository\io\cucumber\cucumber-json-formatter\0.3.2\cucumber-json-formatter-0.3.2.jar;C:\Users\Admin\.m2\repository\io\cucumber\datatable\7.34.3\datatable-7.34.3.jar;C:\Users\Admin\.m2\repository\io\cucumber\cucumber-plugin\7.34.3\cucumber-plugin-7.34.3.jar;C:\Users\Admin\.m2\repository\io\cucumber\docstring\7.34.3\docstring-7.34.3.jar;C:\Users\Admin\.m2\repository\io\cucumber\html-formatter\22.3.0\html-formatter-22.3.0.jar;C:\Users\Admin\.m2\repository\io\cucumber\junit-xml-formatter\0.11.0\junit-xml-formatter-0.11.0.jar;C:\Users\Admin\.m2\repository\io\cucumber\ci-environment\12.0.0\ci-environment-12.0.0.jar;C:\Users\Admin\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Admin\.m2\repository\io\cucumber\cucumber-testng\7.34.3\cucumber-testng-7.34.3.jar;C:\Users\Admin\.m2\repository\io\qameta\allure\allure-cucumber7-jvm\2.35.3\allure-cucumber7-jvm-2.35.3.jar;C:\Users\Admin\.m2\repository\io\qameta\allure\allure-java-commons\2.35.3\allure-java-commons-2.35.3.jar;C:\Users\Admin\.m2\repository\io\qameta\allure\allure-model\2.35.3\allure-model-2.35.3.jar;C:\Users\Admin\.m2\repository\io\qameta\allure\allure-rest-assured\2.35.3\allure-rest-assured-2.35.3.jar;C:\Users\Admin\.m2\repository\io\qameta\allure\allure-attachments\2.35.3\allure-attachments-2.35.3.jar;C:\Users\Admin\.m2\repository\org\freemarker\freemarker\2.3.33\freemarker-2.3.33.jar;C:\Users\Admin\.m2\repository\io\qameta\allure\allure-testng\2.35.3\allure-testng-2.35.3.jar;C:\Users\Admin\.m2\repository\io\qameta\allure\allure-test-filter\2.35.3\allure-test-filter-2.35.3.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Admin"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2026-04-21"/>
+    <property name="java.home" value="C:\Users\Admin\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.11.v20260515-1531\jre"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\Admin\eclipse-workspace\ATT06JunBDDRESTAssuredFramework"/>
+    <property name="style.color" value="always"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\Admin\AppData\Local\Temp\surefire17713266130768575895\surefirebooter-20260802121211350_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.11+10-LTS"/>
+    <property name="user.name" value="Admin"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-21.0.11+10"/>
+    <property name="localRepository" value="C:\Users\Admin\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\Admin\AppData\Local\Temp\"/>
+    <property name="java.version" value="21.0.11"/>
+    <property name="user.dir" value="C:\Users\Admin\eclipse-workspace\ATT06JunBDDRESTAssuredFramework"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Users\Admin\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.11.v20260515-1531\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Users/Admin/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.11.v20260515-1531/jre/bin/server;C:/Users/Admin/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.11.v20260515-1531/jre/bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Java\jdk-21.0.10\bin;C:\Program Files\apache-maven-3.9.16\bin;C:\Users\Admin\scoop\shims;C:\Users\Admin\AppData\Local\Microsoft\WindowsApps;C:\Users\Admin\AppData\Roaming\npm;C:\Users\Admin\AppData\Local\Programs\Microsoft VS Code\bin;C:\Windows\system32;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="21.0.11+10-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="runScenario[&quot;verify if create playlist is working&quot;, &quot;Validate Playlist API&apos;s&quot;](1)" classname="RunnerPackage.runner" time="8.506">
+    <system-out><![CDATA[
+&amp#27;[1mScenario:&amp#27;[22m verify if create playlist is working                 &amp#27;[90m# src/test/resources/SpotifyFeature/Playlist.feature:3&amp#27;[39m
+Request method:	POST
+Request URI:	https://accounts.spotify.com/api/token
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	refresh_token=AQA6P7FWzeNqtmLy2ZnqzcWw2WNNHCYCUASok3lrCC7i4xeM1FmvY7NrqulfHUCf8y_RnpwhoqV0oVi7TT6qbb3Gn_28zgYvFOof1Eryj_gyIblfwcYRwII1M2l_kAe94-I
+				grant_type=refresh_token
+				client_secret=8e1605d6053a416db3554e807903a713
+				client_id=a8969aff0935424caa2852a20e82e4dc
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+server: envoy
+date: Sun, 02 Aug 2026 06:42:19 GMT
+request-id: 90b925c4-3c41-4d54-a5b6-cd4f4057e7c1
+content-type: application/json
+set-cookie: __Host-device_id=AQCMPBgDDA8H9EJatZoi5HbKHfQlUkpJhpQqfuhhS4vhYVa9rsD3fB2C4dmDg71MdVU656VeGZ0Pp-6wyzJkMsCnwCfAHK0LXmo;Version=1;Path=/;Max-Age=2147483647;Secure;HttpOnly;SameSite=Lax
+set-cookie: sp_tr=false;Version=1;Domain=accounts.spotify.com;Path=/;Secure;SameSite=Lax
+x-envoy-upstream-service-time: 18
+via: HTTP/1.1 fringe, HTTP/2 edgeproxy, 1.1 google
+strict-transport-security: max-age=31536000
+x-content-type-options: nosniff
+alt-svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+content-encoding: gzip
+vary: Accept-Encoding
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Transfer-Encoding: chunked
+
+{
+    "access_token": "BQBOP_KJRM27p27OSnOzyVP7a9ReTd7Erg9bOxiRQFmWPjWPvuDSsUBeySpSzq-pfxhw3REkFvlXtKtXYbVFnKEvIHk8gr7c9epIbrPCCwyd48zNln79n0B-svSDZZRBx7rYkTeUmiV_8IK3eTGCO00iORraMBE9YPqBgiabdcVsyot-LsUPVQVNk5pnRwe8WsL-V9iAN0ngY5oKHTp64HMDWFal_6RjN6lzanUKeCZX00RSXNS5XVJJFuOzSSTi-zu_KTJHWGzQ3y71adccmeaTUXHebvzJyFi4x0aY_owKcjBtW-IoeglektUazQHSZjLySQ",
+    "token_type": "Bearer",
+    "expires_in": 3600,
+    "scope": "playlist-read-private playlist-read-collaborative ugc-image-upload playlist-modify-private playlist-modify-public"
+}
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mGiven &amp#27;[22mcreate playlist api payload&amp#27;[39m                          &amp#27;[90m# steps.PlaylistSteps.create_playlist_api_payload()&amp#27;[39m
+Request method:	POST
+Request URI:	https://api.spotify.com/v1/me/playlists
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer BQBOP_KJRM27p27OSnOzyVP7a9ReTd7Erg9bOxiRQFmWPjWPvuDSsUBeySpSzq-pfxhw3REkFvlXtKtXYbVFnKEvIHk8gr7c9epIbrPCCwyd48zNln79n0B-svSDZZRBx7rYkTeUmiV_8IK3eTGCO00iORraMBE9YPqBgiabdcVsyot-LsUPVQVNk5pnRwe8WsL-V9iAN0ngY5oKHTp64HMDWFal_6RjN6lzanUKeCZX00RSXNS5XVJJFuOzSSTi-zu_KTJHWGzQ3y71adccmeaTUXHebvzJyFi4x0aY_owKcjBtW-IoeglektUazQHSZjLySQ
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "description": "BDD Framework",
+    "name": "Aniket Playlist BDD Framework 2",
+    "public": false
+}
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22muser calls with POST http request for create playlist&amp#27;[39m &amp#27;[90m# steps.PlaylistSteps.user_calls_with_post_http_request_for_create_playlist()&amp#27;[39m
+HTTP/1.1 201 Created
+content-type: application/json; charset=utf-8
+cache-control: private, max-age=0
+x-robots-tag: noindex, nofollow
+content-encoding: gzip
+server-timing: edge;dur=96
+strict-transport-security: max-age=31536000
+x-content-type-options: nosniff
+alt-svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+date: Sun, 02 Aug 2026 06:42:21 GMT
+server: envoy
+via: HTTP/2 edgeproxy, 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Transfer-Encoding: chunked
+
+{
+    "collaborative": false,
+    "description": "BDD Framework",
+    "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/4Kdoi2oSaBULGJsPFJng6f"
+    },
+    "followers": {
+        "href": null,
+        "total": 0
+    },
+    "href": "https://api.spotify.com/v1/playlists/4Kdoi2oSaBULGJsPFJng6f",
+    "id": "4Kdoi2oSaBULGJsPFJng6f",
+    "images": [
+        
+    ],
+    "primary_color": null,
+    "name": "Aniket Playlist BDD Framework 2",
+    "type": "playlist",
+    "uri": "spotify:playlist:4Kdoi2oSaBULGJsPFJng6f",
+    "owner": {
+        "href": "https://api.spotify.com/v1/users/31cbwletdqewfuqulravzkko7sdu",
+        "id": "31cbwletdqewfuqulravzkko7sdu",
+        "type": "user",
+        "uri": "spotify:user:31cbwletdqewfuqulravzkko7sdu",
+        "display_name": null,
+        "external_urls": {
+            "spotify": "https://open.spotify.com/user/31cbwletdqewfuqulravzkko7sdu"
+        }
+    },
+    "public": false,
+    "snapshot_id": "AAAAJjlNtrC2zB3lCV+cxnNDkFNJp/zV",
+    "items": {
+        "limit": 100,
+        "next": null,
+        "offset": 0,
+        "previous": null,
+        "href": "https://api.spotify.com/v1/playlists/4Kdoi2oSaBULGJsPFJng6f/items",
+        "total": 0,
+        "items": [
+            
+        ]
+    }
+}
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mThen &amp#27;[22mapi call executed with status code &amp#27;[1m201&amp#27;[22m&amp#27;[39m                &amp#27;[90m# steps.PlaylistSteps.api_call_executed_with_status_code(java.lang.Integer)&amp#27;[39m
+]]></system-out>
+    <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;verify if fetch playlist functionality is working&quot;, &quot;Validate Playlist API&apos;s&quot;](2)" classname="RunnerPackage.runner" time="0.642">
+    <system-out><![CDATA[
+&amp#27;[1mScenario:&amp#27;[22m verify if fetch playlist functionality is working &amp#27;[90m# src/test/resources/SpotifyFeature/Playlist.feature:8&amp#27;[39m
+Token is good to use
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mGiven &amp#27;[22mGET playlist api payload&amp#27;[39m                          &amp#27;[90m# steps.PlaylistSteps.get_playlist_api_payload()&amp#27;[39m
+Request method:	GET
+Request URI:	https://api.spotify.com/v1/playlists/4Kdoi2oSaBULGJsPFJng6f
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=4Kdoi2oSaBULGJsPFJng6f
+Headers:		Authorization=Bearer BQBOP_KJRM27p27OSnOzyVP7a9ReTd7Erg9bOxiRQFmWPjWPvuDSsUBeySpSzq-pfxhw3REkFvlXtKtXYbVFnKEvIHk8gr7c9epIbrPCCwyd48zNln79n0B-svSDZZRBx7rYkTeUmiV_8IK3eTGCO00iORraMBE9YPqBgiabdcVsyot-LsUPVQVNk5pnRwe8WsL-V9iAN0ngY5oKHTp64HMDWFal_6RjN6lzanUKeCZX00RSXNS5XVJJFuOzSSTi-zu_KTJHWGzQ3y71adccmeaTUXHebvzJyFi4x0aY_owKcjBtW-IoeglektUazQHSZjLySQ
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22muser calls with GET http request&amp#27;[39m                   &amp#27;[90m# steps.PlaylistSteps.user_calls_with_get_http_request()&amp#27;[39m
+HTTP/1.1 200 OK
+content-type: application/json; charset=utf-8
+cache-control: public, max-age=0
+etag: "MC-IjE3OTE4Y2VmNDVkNDQ2MGY2OWZjN2U1NTljYjA3Nzc2Ig=="
+mc-cache-policy: public
+x-robots-tag: noindex, nofollow
+mc-etag: "17918cef45d4460f69fc7e559cb07776"
+content-encoding: gzip
+server-timing: edge;dur=104
+strict-transport-security: max-age=31536000
+x-content-type-options: nosniff
+alt-svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+date: Sun, 02 Aug 2026 06:42:23 GMT
+server: envoy
+via: HTTP/2 edgeproxy, 1.1 google
+Alt-Svc: h3=":443"; ma=2592000
+Transfer-Encoding: chunked
+
+{
+    "collaborative": false,
+    "description": "BDD Framework",
+    "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/4Kdoi2oSaBULGJsPFJng6f"
+    },
+    "followers": {
+        "href": null,
+        "total": 0
+    },
+    "href": "https://api.spotify.com/v1/playlists/4Kdoi2oSaBULGJsPFJng6f",
+    "id": "4Kdoi2oSaBULGJsPFJng6f",
+    "images": null,
+    "name": "Aniket Playlist BDD Framework 2",
+    "owner": {
+        "display_name": "Aniket Bhosale",
+        "external_urls": {
+            "spotify": "https://open.spotify.com/user/31cbwletdqewfuqulravzkko7sdu"
+        },
+        "href": "https://api.spotify.com/v1/users/31cbwletdqewfuqulravzkko7sdu",
+        "id": "31cbwletdqewfuqulravzkko7sdu",
+        "type": "user",
+        "uri": "spotify:user:31cbwletdqewfuqulravzkko7sdu"
+    },
+    "primary_color": null,
+    "public": true,
+    "snapshot_id": "AAAAAQmU8XYVP36pQMpQ3SrHHkO3SBzY",
+    "items": {
+        "href": "https://api.spotify.com/v1/playlists/4Kdoi2oSaBULGJsPFJng6f/items?offset=0&limit=0",
+        "items": [
+            
+        ],
+        "limit": 0,
+        "next": null,
+        "offset": 0,
+        "previous": null,
+        "total": 0
+    },
+    "type": "playlist",
+    "uri": "spotify:playlist:4Kdoi2oSaBULGJsPFJng6f"
+}
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mThen &amp#27;[22mapi call should executes with status code &amp#27;[1m200&amp#27;[22m&amp#27;[39m      &amp#27;[90m# steps.PlaylistSteps.api_call_should_executes_with_status_code(java.lang.Integer)&amp#27;[39m
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;verify if update playlist functionality is working&quot;, &quot;Validate Playlist API&apos;s&quot;](3)" classname="RunnerPackage.runner" time="0.49">
+    <system-out><![CDATA[
+&amp#27;[1mScenario:&amp#27;[22m verify if update playlist functionality is working &amp#27;[90m# src/test/resources/SpotifyFeature/Playlist.feature:13&amp#27;[39m
+Token is good to use
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mGiven &amp#27;[22mupdate playlist api payload&amp#27;[39m                        &amp#27;[90m# steps.PlaylistSteps.update_playlist_api_payload()&amp#27;[39m
+Request method:	PUT
+Request URI:	https://api.spotify.com/v1/playlists/4Kdoi2oSaBULGJsPFJng6f
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	PID=4Kdoi2oSaBULGJsPFJng6f
+Headers:		Authorization=Bearer BQBOP_KJRM27p27OSnOzyVP7a9ReTd7Erg9bOxiRQFmWPjWPvuDSsUBeySpSzq-pfxhw3REkFvlXtKtXYbVFnKEvIHk8gr7c9epIbrPCCwyd48zNln79n0B-svSDZZRBx7rYkTeUmiV_8IK3eTGCO00iORraMBE9YPqBgiabdcVsyot-LsUPVQVNk5pnRwe8WsL-V9iAN0ngY5oKHTp64HMDWFal_6RjN6lzanUKeCZX00RSXNS5XVJJFuOzSSTi-zu_KTJHWGzQ3y71adccmeaTUXHebvzJyFi4x0aY_owKcjBtW-IoeglektUazQHSZjLySQ
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "description": "BDD Framework",
+    "name": "Aniket Playlist BDD Framework 2 2026-08-02_12:12:25",
+    "public": false
+}
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22muser calls with PUT http request&amp#27;[39m                    &amp#27;[90m# steps.PlaylistSteps.user_calls_with_put_http_request()&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mThen &amp#27;[22mapi call executes with status code &amp#27;[1m200&amp#27;[22m&amp#27;[39m              &amp#27;[90m# steps.PlaylistSteps.api_call_executes_with_status_code(java.lang.Integer)&amp#27;[39m
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;verify Search for song is working&quot;, &quot;Validate Search feature for song&quot;](4)" classname="RunnerPackage.runner" time="0.939">
+    <system-out><![CDATA[
+&amp#27;[1mScenario:&amp#27;[22m verify Search for song is working                   &amp#27;[90m# src/test/resources/SpotifyFeature/Search.feature:3&amp#27;[39m
+Token is good to use
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mGiven &amp#27;[22mGET Search song api payload is available&amp#27;[39m            &amp#27;[90m# steps.SearchSteps.get_search_song_api_payload_is_available(io.cucumber.datatable.DataTable)&amp#27;[39m
+      | songname   | type  | artist         |
+      | Khudaya Ve | track | Salim Merchant |
+Request method:	GET
+Request URI:	https://api.spotify.com/v1/search?q=Khudaya%20Ve&type=track&artist=Salim%20Merchant
+Proxy:			<none>
+Request params:	<none>
+Query params:	q=Khudaya Ve
+				type=track
+				artist=Salim Merchant
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer BQBOP_KJRM27p27OSnOzyVP7a9ReTd7Erg9bOxiRQFmWPjWPvuDSsUBeySpSzq-pfxhw3REkFvlXtKtXYbVFnKEvIHk8gr7c9epIbrPCCwyd48zNln79n0B-svSDZZRBx7rYkTeUmiV_8IK3eTGCO00iORraMBE9YPqBgiabdcVsyot-LsUPVQVNk5pnRwe8WsL-V9iAN0ngY5oKHTp64HMDWFal_6RjN6lzanUKeCZX00RSXNS5XVJJFuOzSSTi-zu_KTJHWGzQ3y71adccmeaTUXHebvzJyFi4x0aY_owKcjBtW-IoeglektUazQHSZjLySQ
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22muser calls with GET http request for Search for Item&amp#27;[39m &amp#27;[90m# steps.SearchSteps.user_calls_with_get_http_request_for_search_for_item()&amp#27;[39m
+HTTP/1.1 200 OK
+content-type: application/json; charset=utf-8
+cache-control: public, max-age=0
+etag: "MC-ImQ0NmIwZDQ4Y2VlYjk3ZmVlNjRkZDczMzQxMjA3OTVmIg=="
+mc-cache-ttl: 7200
+mc-cache-policy: public
+x-robots-tag: noindex, nofollow
+mc-etag: "d46b0d48ceeb97fee64dd7334120795f"
+content-encoding: gzip
+server-timing: edge;dur=287
+strict-transport-security: max-age=31536000
+x-content-type-options: nosniff
+alt-svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+date: Sun, 02 Aug 2026 06:42:24 GMT
+server: envoy
+via: HTTP/2 edgeproxy, 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Transfer-Encoding: chunked
+
+{
+    "tracks": {
+        "href": "https://api.spotify.com/v1/search?offset=0&limit=5&query=Khudaya%20Ve&type=track",
+        "limit": 5,
+        "next": "https://api.spotify.com/v1/search?offset=5&limit=5&query=Khudaya%20Ve&type=track",
+        "offset": 0,
+        "previous": null,
+        "total": 302,
+        "items": [
+            {
+                "album": {
+                    "album_type": "album",
+                    "artists": [
+                        {
+                            "external_urls": {
+                                "spotify": "https://open.spotify.com/artist/6ohaQzKaXrobAL8paLSaxq"
+                            },
+                            "href": "https://api.spotify.com/v1/artists/6ohaQzKaXrobAL8paLSaxq",
+                            "id": "6ohaQzKaXrobAL8paLSaxq",
+                            "name": "Salim–Sulaiman",
+                            "type": "artist",
+                            "uri": "spotify:artist:6ohaQzKaXrobAL8paLSaxq"
+                        }
+                    ],
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/album/1EkDv6UBg7PKFCw910WMS0"
+                    },
+                    "href": "https://api.spotify.com/v1/albums/1EkDv6UBg7PKFCw910WMS0",
+                    "id": "1EkDv6UBg7PKFCw910WMS0",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273a7e25057d5ee74c0ef7fc7bb"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02a7e25057d5ee74c0ef7fc7bb"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851a7e25057d5ee74c0ef7fc7bb"
+                        }
+                    ],
+                    "is_playable": true,
+                    "name": "Luck",
+                    "release_date": "2009-06-23",
+                    "release_date_precision": "day",
+                    "total_tracks": 9,
+                    "type": "album",
+                    "uri": "spotify:album:1EkDv6UBg7PKFCw910WMS0"
+                },
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/1TbRSunWGZ46mqnapcWxrm"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/1TbRSunWGZ46mqnapcWxrm",
+                        "id": "1TbRSunWGZ46mqnapcWxrm",
+                        "name": "Salim Merchant",
+                        "type": "artist",
+                        "uri": "spotify:artist:1TbRSunWGZ46mqnapcWxrm"
+                    }
+                ],
+                "disc_number": 1,
+                "duration_ms": 321146,
+                "explicit": false,
+                "external_ids": {
+                    "isrc": "INS180902839"
+                },
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/track/2PRLuCoUGWfUpbBo7yWuJd"
+                },
+                "href": "https://api.spotify.com/v1/tracks/2PRLuCoUGWfUpbBo7yWuJd",
+                "id": "2PRLuCoUGWfUpbBo7yWuJd",
+                "is_local": false,
+                "is_playable": true,
+                "name": "Khudaya Ve",
+                "track_number": 2,
+                "type": "track",
+                "uri": "spotify:track:2PRLuCoUGWfUpbBo7yWuJd"
+            },
+            {
+                "album": {
+                    "album_type": "album",
+                    "artists": [
+                        {
+                            "external_urls": {
+                                "spotify": "https://open.spotify.com/artist/6Mv8GjQa7LKUGCAqa9qqdb"
+                            },
+                            "href": "https://api.spotify.com/v1/artists/6Mv8GjQa7LKUGCAqa9qqdb",
+                            "id": "6Mv8GjQa7LKUGCAqa9qqdb",
+                            "name": "Vishal-Shekhar",
+                            "type": "artist",
+                            "uri": "spotify:artist:6Mv8GjQa7LKUGCAqa9qqdb"
+                        }
+                    ],
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/album/4SPHfSWibeoFCSdR4vd5QL"
+                    },
+                    "href": "https://api.spotify.com/v1/albums/4SPHfSWibeoFCSdR4vd5QL",
+                    "id": "4SPHfSWibeoFCSdR4vd5QL",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2731992dd7b33baf5887ea4a1ec"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e021992dd7b33baf5887ea4a1ec"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048511992dd7b33baf5887ea4a1ec"
+                        }
+                    ],
+                    "is_playable": true,
+                    "name": "I Hate Luv Storys (Original Motion Picture Soundtrack)",
+                    "release_date": "2010-05-25",
+                    "release_date_precision": "day",
+                    "total_tracks": 8,
+                    "type": "album",
+                    "uri": "spotify:album:4SPHfSWibeoFCSdR4vd5QL"
+                },
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/6Mv8GjQa7LKUGCAqa9qqdb"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/6Mv8GjQa7LKUGCAqa9qqdb",
+                        "id": "6Mv8GjQa7LKUGCAqa9qqdb",
+                        "name": "Vishal-Shekhar",
+                        "type": "artist",
+                        "uri": "spotify:artist:6Mv8GjQa7LKUGCAqa9qqdb"
+                    },
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/6eMFGgGDh5iXU1POAK0cpe"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/6eMFGgGDh5iXU1POAK0cpe",
+                        "id": "6eMFGgGDh5iXU1POAK0cpe",
+                        "name": "Suraj Jagan",
+                        "type": "artist",
+                        "uri": "spotify:artist:6eMFGgGDh5iXU1POAK0cpe"
+                    },
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/0Yb0T3wUUNiIvHjqnfkbuH"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/0Yb0T3wUUNiIvHjqnfkbuH",
+                        "id": "0Yb0T3wUUNiIvHjqnfkbuH",
+                        "name": "Mahalakshmi Iyer",
+                        "type": "artist",
+                        "uri": "spotify:artist:0Yb0T3wUUNiIvHjqnfkbuH"
+                    }
+                ],
+                "disc_number": 1,
+                "duration_ms": 343586,
+                "explicit": false,
+                "external_ids": {
+                    "isrc": "INS171000177"
+                },
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/track/4dPeCbg2Op44s9kwyMS3ZT"
+                },
+                "href": "https://api.spotify.com/v1/tracks/4dPeCbg2Op44s9kwyMS3ZT",
+                "id": "4dPeCbg2Op44s9kwyMS3ZT",
+                "is_local": false,
+                "is_playable": true,
+                "name": "Sadka",
+                "track_number": 5,
+                "type": "track",
+                "uri": "spotify:track:4dPeCbg2Op44s9kwyMS3ZT"
+            },
+            {
+                "album": {
+                    "album_type": "album",
+                    "artists": [
+                        {
+                            "external_urls": {
+                                "spotify": "https://open.spotify.com/artist/1wRPtKGflJrBx9BmLsSwlU"
+                            },
+                            "href": "https://api.spotify.com/v1/artists/1wRPtKGflJrBx9BmLsSwlU",
+                            "id": "1wRPtKGflJrBx9BmLsSwlU",
+                            "name": "Pritam",
+                            "type": "artist",
+                            "uri": "spotify:artist:1wRPtKGflJrBx9BmLsSwlU"
+                        },
+                        {
+                            "external_urls": {
+                                "spotify": "https://open.spotify.com/artist/4tma2wxDchrifG8Pflic4Q"
+                            },
+                            "href": "https://api.spotify.com/v1/artists/4tma2wxDchrifG8Pflic4Q",
+                            "id": "4tma2wxDchrifG8Pflic4Q",
+                            "name": "Aadesh Shrivastava",
+                            "type": "artist",
+                            "uri": "spotify:artist:4tma2wxDchrifG8Pflic4Q"
+                        },
+                        {
+                            "external_urls": {
+                                "spotify": "https://open.spotify.com/artist/6hpDlOvqsnIxrPegGTWVY1"
+                            },
+                            "href": "https://api.spotify.com/v1/artists/6hpDlOvqsnIxrPegGTWVY1",
+                            "id": "6hpDlOvqsnIxrPegGTWVY1",
+                            "name": "Shantanu Moitra",
+                            "type": "artist",
+                            "uri": "spotify:artist:6hpDlOvqsnIxrPegGTWVY1"
+                        }
+                    ],
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/album/1XYXVtCbeTvyrE5pH4BoOg"
+                    },
+                    "href": "https://api.spotify.com/v1/albums/1XYXVtCbeTvyrE5pH4BoOg",
+                    "id": "1XYXVtCbeTvyrE5pH4BoOg",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273f2f0c860ac1d88c50ae27082"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02f2f0c860ac1d88c50ae27082"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851f2f0c860ac1d88c50ae27082"
+                        }
+                    ],
+                    "is_playable": true,
+                    "name": "Raajneeti (Original Motion Picture Soundtrack)",
+                    "release_date": "2010-05-12",
+                    "release_date_precision": "day",
+                    "total_tracks": 8,
+                    "type": "album",
+                    "uri": "spotify:album:1XYXVtCbeTvyrE5pH4BoOg"
+                },
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/4tma2wxDchrifG8Pflic4Q"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/4tma2wxDchrifG8Pflic4Q",
+                        "id": "4tma2wxDchrifG8Pflic4Q",
+                        "name": "Aadesh Shrivastava",
+                        "type": "artist",
+                        "uri": "spotify:artist:4tma2wxDchrifG8Pflic4Q"
+                    },
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/5EXIQQjCaCnRPJ68SxYURB"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/5EXIQQjCaCnRPJ68SxYURB",
+                        "id": "5EXIQQjCaCnRPJ68SxYURB",
+                        "name": "Shashi",
+                        "type": "artist",
+                        "uri": "spotify:artist:5EXIQQjCaCnRPJ68SxYURB"
+                    },
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/2grj0KQLi1jLIaOvCywgNH"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/2grj0KQLi1jLIaOvCywgNH",
+                        "id": "2grj0KQLi1jLIaOvCywgNH",
+                        "name": "Rosalie Nicholson",
+                        "type": "artist",
+                        "uri": "spotify:artist:2grj0KQLi1jLIaOvCywgNH"
+                    }
+                ],
+                "disc_number": 1,
+                "duration_ms": 344773,
+                "explicit": false,
+                "external_ids": {
+                    "isrc": "INS171000145"
+                },
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/track/62kgwMyl2b6A9rJq38PbJ3"
+                },
+                "href": "https://api.spotify.com/v1/tracks/62kgwMyl2b6A9rJq38PbJ3",
+                "id": "62kgwMyl2b6A9rJq38PbJ3",
+                "is_local": false,
+                "is_playable": true,
+                "name": "Mora Piya",
+                "track_number": 2,
+                "type": "track",
+                "uri": "spotify:track:62kgwMyl2b6A9rJq38PbJ3"
+            },
+            {
+                "album": {
+                    "album_type": "album",
+                    "artists": [
+                        {
+                            "external_urls": {
+                                "spotify": "https://open.spotify.com/artist/6ohaQzKaXrobAL8paLSaxq"
+                            },
+                            "href": "https://api.spotify.com/v1/artists/6ohaQzKaXrobAL8paLSaxq",
+                            "id": "6ohaQzKaXrobAL8paLSaxq",
+                            "name": "Salim–Sulaiman",
+                            "type": "artist",
+                            "uri": "spotify:artist:6ohaQzKaXrobAL8paLSaxq"
+                        }
+                    ],
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/album/1EkDv6UBg7PKFCw910WMS0"
+                    },
+                    "href": "https://api.spotify.com/v1/albums/1EkDv6UBg7PKFCw910WMS0",
+                    "id": "1EkDv6UBg7PKFCw910WMS0",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273a7e25057d5ee74c0ef7fc7bb"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02a7e25057d5ee74c0ef7fc7bb"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851a7e25057d5ee74c0ef7fc7bb"
+                        }
+                    ],
+                    "is_playable": true,
+                    "name": "Luck",
+                    "release_date": "2009-06-23",
+                    "release_date_precision": "day",
+                    "total_tracks": 9,
+                    "type": "album",
+                    "uri": "spotify:album:1EkDv6UBg7PKFCw910WMS0"
+                },
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/6ohaQzKaXrobAL8paLSaxq"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/6ohaQzKaXrobAL8paLSaxq",
+                        "id": "6ohaQzKaXrobAL8paLSaxq",
+                        "name": "Salim–Sulaiman",
+                        "type": "artist",
+                        "uri": "spotify:artist:6ohaQzKaXrobAL8paLSaxq"
+                    }
+                ],
+                "disc_number": 1,
+                "duration_ms": 222783,
+                "explicit": false,
+                "external_ids": {
+                    "isrc": "INS180902843"
+                },
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/track/4dOlSigiaNT99CZNtVd5IH"
+                },
+                "href": "https://api.spotify.com/v1/tracks/4dOlSigiaNT99CZNtVd5IH",
+                "id": "4dOlSigiaNT99CZNtVd5IH",
+                "is_local": false,
+                "is_playable": true,
+                "name": "Khudaya Ve (Radio Mix)",
+                "track_number": 6,
+                "type": "track",
+                "uri": "spotify:track:4dOlSigiaNT99CZNtVd5IH"
+            },
+            {
+                "album": {
+                    "album_type": "album",
+                    "artists": [
+                        {
+                            "external_urls": {
+                                "spotify": "https://open.spotify.com/artist/1wRPtKGflJrBx9BmLsSwlU"
+                            },
+                            "href": "https://api.spotify.com/v1/artists/1wRPtKGflJrBx9BmLsSwlU",
+                            "id": "1wRPtKGflJrBx9BmLsSwlU",
+                            "name": "Pritam",
+                            "type": "artist",
+                            "uri": "spotify:artist:1wRPtKGflJrBx9BmLsSwlU"
+                        }
+                    ],
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/album/0Yh63z8eqUG51rnjnah5NN"
+                    },
+                    "href": "https://api.spotify.com/v1/albums/0Yh63z8eqUG51rnjnah5NN",
+                    "id": "0Yh63z8eqUG51rnjnah5NN",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273e2337cce8459c3539f16987a"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02e2337cce8459c3539f16987a"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851e2337cce8459c3539f16987a"
+                        }
+                    ],
+                    "is_playable": true,
+                    "name": "Billu",
+                    "release_date": "2009-01-05",
+                    "release_date_precision": "day",
+                    "total_tracks": 15,
+                    "type": "album",
+                    "uri": "spotify:album:0Yh63z8eqUG51rnjnah5NN"
+                },
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/1wRPtKGflJrBx9BmLsSwlU"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/1wRPtKGflJrBx9BmLsSwlU",
+                        "id": "1wRPtKGflJrBx9BmLsSwlU",
+                        "name": "Pritam",
+                        "type": "artist",
+                        "uri": "spotify:artist:1wRPtKGflJrBx9BmLsSwlU"
+                    },
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/2vdTNHzAv3vnaxfiz8MYtB"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/2vdTNHzAv3vnaxfiz8MYtB",
+                        "id": "2vdTNHzAv3vnaxfiz8MYtB",
+                        "name": "Soham Chakraborty",
+                        "type": "artist",
+                        "uri": "spotify:artist:2vdTNHzAv3vnaxfiz8MYtB"
+                    },
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/0le3G5nxaIL8ecHpBA6LPW"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/0le3G5nxaIL8ecHpBA6LPW",
+                        "id": "0le3G5nxaIL8ecHpBA6LPW",
+                        "name": "Akriti Kakar",
+                        "type": "artist",
+                        "uri": "spotify:artist:0le3G5nxaIL8ecHpBA6LPW"
+                    },
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/2o4R2rK7FetH40HTv0SUWl"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/2o4R2rK7FetH40HTv0SUWl",
+                        "id": "2o4R2rK7FetH40HTv0SUWl",
+                        "name": "Monali Thakur",
+                        "type": "artist",
+                        "uri": "spotify:artist:2o4R2rK7FetH40HTv0SUWl"
+                    },
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/0yRC5n90spXG0d3aiDQ0vB"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/0yRC5n90spXG0d3aiDQ0vB",
+                        "id": "0yRC5n90spXG0d3aiDQ0vB",
+                        "name": "Gulzar",
+                        "type": "artist",
+                        "uri": "spotify:artist:0yRC5n90spXG0d3aiDQ0vB"
+                    }
+                ],
+                "disc_number": 1,
+                "duration_ms": 280557,
+                "explicit": false,
+                "external_ids": {
+                    "isrc": "INS180810386"
+                },
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/track/2XYyriLyJSuGj4FN7QoNmM"
+                },
+                "href": "https://api.spotify.com/v1/tracks/2XYyriLyJSuGj4FN7QoNmM",
+                "id": "2XYyriLyJSuGj4FN7QoNmM",
+                "is_local": false,
+                "is_playable": true,
+                "name": "Khudaya Khair",
+                "track_number": 7,
+                "type": "track",
+                "uri": "spotify:track:2XYyriLyJSuGj4FN7QoNmM"
+            }
+        ]
+    }
+}
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mThen &amp#27;[22mapi calls executed with status code &amp#27;[1m200&amp#27;[22m&amp#27;[39m              &amp#27;[90m# steps.SearchSteps.api_calls_executed_with_status_code(java.lang.Integer)&amp#27;[39m
+]]></system-out>
+  </testcase>
+</testsuite>

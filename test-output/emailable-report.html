@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">4</td><td class="num">8,904</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="4">RunnerPackage.runner</td><td><a href="#m0">runScenario</a></td><td rowspan="4">1791467872567</td><td rowspan="4">7374</td></tr><tr class="failedeven"><td><a href="#m1">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m2">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m3">runScenario</a></td></tr></tbody>
+</table>
+<h2>Test</h2><h3 id="m0">RunnerPackage.runner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;verify if create playlist is working&quot;</td><td>&quot;Validate Playlist API&apos;s&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.IllegalStateException: Cannot parse content to class com.spotify.pojo.Playlist because no content-type was present in the response and no default parser has been set.
+You can specify a default parser using e.g.:
+RestAssured.defaultParser = Parser.JSON;
+
+or you can specify an explicit ObjectMapper using as(class com.spotify.pojo.Playlist, &lt;ObjectMapper&gt;);
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+	at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl$_as_closure3.doCall(RestAssuredResponseOptionsGroovyImpl.groovy:230)
+	at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl$_as_closure3.doCall(RestAssuredResponseOptionsGroovyImpl.groovy)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+	at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.findContentType(RestAssuredResponseOptionsGroovyImpl.groovy:498)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+	at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:229)
+	at io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:174)
+	at steps.PlaylistSteps.api_call_executed_with_status_code(PlaylistSteps.java:54)
+	at ✽.api call executed with status code 201(file:///C:/Users/Admin/eclipse-workspace/ATT06JunBDDRESTAssuredFramework/src/test/resources/SpotifyFeature/Playlist.feature:6)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">RunnerPackage.runner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;verify if fetch playlist functionality is working&quot;</td><td>&quot;Validate Playlist API&apos;s&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.IllegalArgumentException: parameterValue cannot be null
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+	at io.restassured.internal.common.assertion.AssertParameter.notNull(AssertParameter.groovy:26)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+	at io.restassured.internal.RequestSpecificationImpl.pathParam(RequestSpecificationImpl.groovy:602)
+	at steps.PlaylistSteps.get_playlist_api_payload(PlaylistSteps.java:70)
+	at ✽.GET playlist api payload(file:///C:/Users/Admin/eclipse-workspace/ATT06JunBDDRESTAssuredFramework/src/test/resources/SpotifyFeature/Playlist.feature:9)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">RunnerPackage.runner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;verify Search for song is working&quot;</td><td>&quot;Validate Search feature for song&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: 2 expectations failed.
+Expected status code &lt;200&gt; but was &lt;403&gt;.
+
+Expected content-type &quot;JSON&quot; doesn&apos;t match actual content-type &quot;&quot;.
+
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:516)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+	at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:105)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+	at steps.SearchSteps.api_calls_executed_with_status_code(SearchSteps.java:57)
+	at ✽.api calls executed with status code 200(file:///C:/Users/Admin/eclipse-workspace/ATT06JunBDDRESTAssuredFramework/src/test/resources/SpotifyFeature/Search.feature:8)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">RunnerPackage.runner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;verify if update playlist functionality is working&quot;</td><td>&quot;Validate Playlist API&apos;s&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.IllegalArgumentException: parameterValue cannot be null
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+	at io.restassured.internal.common.assertion.AssertParameter.notNull(AssertParameter.groovy:26)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+	at io.restassured.internal.RequestSpecificationImpl.pathParam(RequestSpecificationImpl.groovy:602)
+	at steps.PlaylistSteps.update_playlist_api_payload(PlaylistSteps.java:101)
+	at ✽.update playlist api payload(file:///C:/Users/Admin/eclipse-workspace/ATT06JunBDDRESTAssuredFramework/src/test/resources/SpotifyFeature/Playlist.feature:14)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

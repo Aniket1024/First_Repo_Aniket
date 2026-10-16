@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="0" failed="4" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-10-08T19:27:51 IST" name="Suite" finished-at="2026-10-08T19:28:00 IST" duration-ms="8904">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunnerPackage.runner@5038d0b5]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2026-10-08T19:27:51 IST" name="Test" finished-at="2026-10-08T19:28:00 IST" duration-ms="8904">
+      <class name="RunnerPackage.runner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:RunnerPackage.runner@5038d0b5]" started-at="2026-10-08T19:27:52 IST" name="setUpClass" finished-at="2026-10-08T19:27:52 IST" duration-ms="498" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1bea7b0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunnerPackage.runner@5038d0b5]" started-at="2026-10-08T19:27:52 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-10-08T19:27:59 IST" duration-ms="7374" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["verify if create playlist is working"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Validate Playlist API's"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[Cannot parse content to class com.spotify.pojo.Playlist because no content-type was present in the response and no default parser has been set.
+You can specify a default parser using e.g.:
+RestAssured.defaultParser = Parser.JSON;
+
+or you can specify an explicit ObjectMapper using as(class com.spotify.pojo.Playlist, <ObjectMapper>);]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: Cannot parse content to class com.spotify.pojo.Playlist because no content-type was present in the response and no default parser has been set.
+You can specify a default parser using e.g.:
+RestAssured.defaultParser = Parser.JSON;
+
+or you can specify an explicit ObjectMapper using as(class com.spotify.pojo.Playlist, <ObjectMapper>);
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl$_as_closure3.doCall(RestAssuredResponseOptionsGroovyImpl.groovy:230)
+at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl$_as_closure3.doCall(RestAssuredResponseOptionsGroovyImpl.groovy)
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.findContentType(RestAssuredResponseOptionsGroovyImpl.groovy:498)
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:229)
+at io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:174)
+at steps.PlaylistSteps.api_call_executed_with_status_code(PlaylistSteps.java:54)
+at ✽.api call executed with status code 201(file:///C:/Users/Admin/eclipse-workspace/ATT06JunBDDRESTAssuredFramework/src/test/resources/SpotifyFeature/Playlist.feature:6)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunnerPackage.runner@5038d0b5]" started-at="2026-10-08T19:27:59 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-10-08T19:28:00 IST" duration-ms="48" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["verify if fetch playlist functionality is working"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Validate Playlist API's"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[parameterValue cannot be null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: parameterValue cannot be null
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+at io.restassured.internal.common.assertion.AssertParameter.notNull(AssertParameter.groovy:26)
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+at io.restassured.internal.RequestSpecificationImpl.pathParam(RequestSpecificationImpl.groovy:602)
+at steps.PlaylistSteps.get_playlist_api_payload(PlaylistSteps.java:70)
+at ✽.GET playlist api payload(file:///C:/Users/Admin/eclipse-workspace/ATT06JunBDDRESTAssuredFramework/src/test/resources/SpotifyFeature/Playlist.feature:9)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunnerPackage.runner@5038d0b5]" started-at="2026-10-08T19:28:00 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-10-08T19:28:00 IST" duration-ms="99" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["verify if update playlist functionality is working"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Validate Playlist API's"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[parameterValue cannot be null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: parameterValue cannot be null
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+at io.restassured.internal.common.assertion.AssertParameter.notNull(AssertParameter.groovy:26)
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+at io.restassured.internal.RequestSpecificationImpl.pathParam(RequestSpecificationImpl.groovy:602)
+at steps.PlaylistSteps.update_playlist_api_payload(PlaylistSteps.java:101)
+at ✽.update playlist api payload(file:///C:/Users/Admin/eclipse-workspace/ATT06JunBDDRESTAssuredFramework/src/test/resources/SpotifyFeature/Playlist.feature:14)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunnerPackage.runner@5038d0b5]" started-at="2026-10-08T19:28:00 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-10-08T19:28:00 IST" duration-ms="755" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["verify Search for song is working"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Validate Search feature for song"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[2 expectations failed.
+Expected status code <200> but was <403>.
+
+Expected content-type "JSON" doesn't match actual content-type "".
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 2 expectations failed.
+Expected status code <200> but was <403>.
+
+Expected content-type "JSON" doesn't match actual content-type "".
+
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:516)
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:105)
+at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+at steps.SearchSteps.api_calls_executed_with_status_code(SearchSteps.java:57)
+at ✽.api calls executed with status code 200(file:///C:/Users/Admin/eclipse-workspace/ATT06JunBDDRESTAssuredFramework/src/test/resources/SpotifyFeature/Search.feature:8)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:RunnerPackage.runner@5038d0b5]" started-at="2026-10-08T19:28:00 IST" name="tearDownClass" finished-at="2026-10-08T19:28:00 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- RunnerPackage.runner -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

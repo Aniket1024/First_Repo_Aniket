@@ -1,0 +1,186 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/4/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Oct 08 19:27:51 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>8 seconds (8904 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='RunnerPackage.runner.runScenario()'><b>runScenario</b><br>Test class: RunnerPackage.runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify if create playlist is working", "Validate Playlist API's"</td>
+<td><div><pre>java.lang.IllegalStateException: Cannot parse content to class com.spotify.pojo.Playlist because no content-type was present in the response and no default parser has been set.
+You can specify a default parser using e.g.:
+RestAssured.defaultParser = Parser.JSON;
+
+or you can specify an explicit ObjectMapper using as(class com.spotify.pojo.Playlist, &lt;ObjectMapper&gt;);
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+	at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl$_as_closure3.doCall(RestAssuredResponseOptionsGroovyImpl.groovy:230)
+	at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl$_as_closure3.doCall(RestAssuredResponseOptionsGroovyImpl.groovy)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+	at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.findContentType(RestAssuredResponseOptionsGroovyImpl.groovy:498)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+	at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:229)
+	at io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:174)
+	at steps.PlaylistSteps.api_call_executed_with_status_code(PlaylistSteps.java:54)
+	at ✽.api call executed with status code 201(file:///C:/Users/Admin/eclipse-workspace/ATT06JunBDDRESTAssuredFramework/src/test/resources/SpotifyFeature/Playlist.feature:6)
+</pre></div><a href='#' onClick='toggleBox("stack-trace719518227", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace719518227'><pre>java.lang.IllegalStateException: Cannot parse content to class com.spotify.pojo.Playlist because no content-type was present in the response and no default parser has been set.
+You can specify a default parser using e.g.:
+RestAssured.defaultParser = Parser.JSON;
+
+or you can specify an explicit ObjectMapper using as(class com.spotify.pojo.Playlist, &lt;ObjectMapper&gt;);
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+	at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl$_as_closure3.doCall(RestAssuredResponseOptionsGroovyImpl.groovy:230)
+	at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl$_as_closure3.doCall(RestAssuredResponseOptionsGroovyImpl.groovy)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+	at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.findContentType(RestAssuredResponseOptionsGroovyImpl.groovy:498)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+	at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:229)
+	at io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:174)
+	at steps.PlaylistSteps.api_call_executed_with_status_code(PlaylistSteps.java:54)
+	at ✽.api call executed with status code 201(file:///C:/Users/Admin/eclipse-workspace/ATT06JunBDDRESTAssuredFramework/src/test/resources/SpotifyFeature/Playlist.feature:6)
+</pre></div></td>
+<td>7</td>
+<td>RunnerPackage.runner@5038d0b5</td></tr>
+<tr>
+<td title='RunnerPackage.runner.runScenario()'><b>runScenario</b><br>Test class: RunnerPackage.runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify if fetch playlist functionality is working", "Validate Playlist API's"</td>
+<td><div><pre>java.lang.IllegalArgumentException: parameterValue cannot be null
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+	at io.restassured.internal.common.assertion.AssertParameter.notNull(AssertParameter.groovy:26)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+	at io.restassured.internal.RequestSpecificationImpl.pathParam(RequestSpecificationImpl.groovy:602)
+	at steps.PlaylistSteps.get_playlist_api_payload(PlaylistSteps.java:70)
+	at ✽.GET playlist api payload(file:///C:/Users/Admin/eclipse-workspace/ATT06JunBDDRESTAssuredFramework/src/test/resources/SpotifyFeature/Playlist.feature:9)
+</pre></div><a href='#' onClick='toggleBox("stack-trace347419231", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace347419231'><pre>java.lang.IllegalArgumentException: parameterValue cannot be null
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+	at io.restassured.internal.common.assertion.AssertParameter.notNull(AssertParameter.groovy:26)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+	at io.restassured.internal.RequestSpecificationImpl.pathParam(RequestSpecificationImpl.groovy:602)
+	at steps.PlaylistSteps.get_playlist_api_payload(PlaylistSteps.java:70)
+	at ✽.GET playlist api payload(file:///C:/Users/Admin/eclipse-workspace/ATT06JunBDDRESTAssuredFramework/src/test/resources/SpotifyFeature/Playlist.feature:9)
+</pre></div></td>
+<td>0</td>
+<td>RunnerPackage.runner@5038d0b5</td></tr>
+<tr>
+<td title='RunnerPackage.runner.runScenario()'><b>runScenario</b><br>Test class: RunnerPackage.runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify Search for song is working", "Validate Search feature for song"</td>
+<td><div><pre>java.lang.AssertionError: 2 expectations failed.
+Expected status code &lt;200&gt; but was &lt;403&gt;.
+
+Expected content-type &quot;JSON&quot; doesn&apos;t match actual content-type &quot;&quot;.
+
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:516)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+	at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:105)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+	at steps.SearchSteps.api_calls_executed_with_status_code(SearchSteps.java:57)
+	at ✽.api calls executed with status code 200(file:///C:/Users/Admin/eclipse-workspace/ATT06JunBDDRESTAssuredFramework/src/test/resources/SpotifyFeature/Search.feature:8)
+</pre></div><a href='#' onClick='toggleBox("stack-trace700262294", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace700262294'><pre>java.lang.AssertionError: 2 expectations failed.
+Expected status code &lt;200&gt; but was &lt;403&gt;.
+
+Expected content-type &quot;JSON&quot; doesn&apos;t match actual content-type &quot;&quot;.
+
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:516)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+	at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:105)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+	at steps.SearchSteps.api_calls_executed_with_status_code(SearchSteps.java:57)
+	at ✽.api calls executed with status code 200(file:///C:/Users/Admin/eclipse-workspace/ATT06JunBDDRESTAssuredFramework/src/test/resources/SpotifyFeature/Search.feature:8)
+</pre></div></td>
+<td>0</td>
+<td>RunnerPackage.runner@5038d0b5</td></tr>
+<tr>
+<td title='RunnerPackage.runner.runScenario()'><b>runScenario</b><br>Test class: RunnerPackage.runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify if update playlist functionality is working", "Validate Playlist API's"</td>
+<td><div><pre>java.lang.IllegalArgumentException: parameterValue cannot be null
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+	at io.restassured.internal.common.assertion.AssertParameter.notNull(AssertParameter.groovy:26)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+	at io.restassured.internal.RequestSpecificationImpl.pathParam(RequestSpecificationImpl.groovy:602)
+	at steps.PlaylistSteps.update_playlist_api_payload(PlaylistSteps.java:101)
+	at ✽.update playlist api payload(file:///C:/Users/Admin/eclipse-workspace/ATT06JunBDDRESTAssuredFramework/src/test/resources/SpotifyFeature/Playlist.feature:14)
+</pre></div><a href='#' onClick='toggleBox("stack-trace473030237", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace473030237'><pre>java.lang.IllegalArgumentException: parameterValue cannot be null
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+	at io.restassured.internal.common.assertion.AssertParameter.notNull(AssertParameter.groovy:26)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+	at io.restassured.internal.RequestSpecificationImpl.pathParam(RequestSpecificationImpl.groovy:602)
+	at steps.PlaylistSteps.update_playlist_api_payload(PlaylistSteps.java:101)
+	at ✽.update playlist api payload(file:///C:/Users/Admin/eclipse-workspace/ATT06JunBDDRESTAssuredFramework/src/test/resources/SpotifyFeature/Playlist.feature:14)
+</pre></div></td>
+<td>0</td>
+<td>RunnerPackage.runner@5038d0b5</td></tr>
+</table><p>
+</body>
+</html>
