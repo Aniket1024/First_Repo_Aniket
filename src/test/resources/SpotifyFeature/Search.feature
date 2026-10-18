@@ -9,3 +9,6 @@ Then api calls executed with status code 200
 
 Scenario: verify Search for song is working or not
 Given GET Search song api payload is available
+
+Scenario: verify Search for song is working or not
+Given GET Search song api payload is available
